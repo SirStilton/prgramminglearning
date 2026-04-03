@@ -2,12 +2,19 @@
 <html lang="de">
 <head>
 	<meta charset="UTF-8">
-<title>Check out my Website</title>
+<title>Meine Seite</title>
 </head>
 <body>
 	<h1>Sieht cool aus hier</h1>
 	<p>Ich lerne gerade HTML.</p>
-	<img scr="HTML_Blog-scaled.jpeg">
-	<button>Klick mich</button>
+	<img src="HTML_Blog-scaled.jpeg" alt="Test" width="300">
+	<button id="meinButton">Klick mich</button>
+
+<script>
+  document.getElementById("meinButton").onclick = function() {
+    alert("Du hast geklickt!");
+  };
+</script>
+
 </body>
 </html>
